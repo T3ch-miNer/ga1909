@@ -10,5 +10,5 @@ WORKDIR ga1909
 RUN pip3 install -r requirements.txt
 ENV JAVA_HOME /usr/local
 COPY dummy.txt sajjad/dummy.txt
-WORKDIR ga1909/bin
+WORKDIR bin
 CMD ["python3","summaryservice.py"]
