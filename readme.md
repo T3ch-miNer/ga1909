@@ -128,6 +128,46 @@ sudo gaenv/bin/pip3 install -r ga1909/requirements.txt
 gaenv/bin/python3 ga1909/bin/summaryservice.py
 
 
+Virtualization tools
+ORacle VirtualBox
+VMWare
+Hyper-V --- windows 10 enterprise or home premium
+
+These are complete VM
+
+Dockers -- Mini VM
+they follow minimalistic architecture
+
+We want applications to be OS independent
+
+dockerhub.com
+install docker in aws ec2
+
+linux -- link
+windows -- 7 or 10 home basic -- docker toolbox
+windows 10 home premium or enterprise -- docker desktop 
+virtualization should be enabled
+
+
+repo -- local repo (ec2) 
+		remote repo (dockerhub)
+sudo docker images --> list all images in local(ec2) repo
+sudo docker search ubuntu --? search all docker images with the word 'ubunut' in the remote repo dockerhub.com
+sudo docker pull ubuntu
+
+containers
+sudo docker ps -a ---> list all active containers
+sudo docker run -it ubuntu bash  --- It always create a new container
+
+Create a container named flaskservice from ubunut image
+Within container install python3
+Install git
+Install the libraries
+Pull the code
+Run
+
+
+
 
 
 
