@@ -166,7 +166,35 @@ Install the libraries
 Pull the code
 Run
 
+sudo docker run --name flaskservice2 -it ubuntu bash
+apt-get update
+apt-get install git
+apt-get install python3
+apt-get install python-pip
+mkdir sajjad
+cd sajjad
+git clone https://github.com/saz2nitk/ga1909.git
+cd ga1909
+pip3 install -r requirements.txt
+cd bin
+python3 summaryservice.py
 
+
+How to create your own docker image
+
+1. Create a file called as 'Dockerfile'
+
+2. Within this Dockerfile we are going to write the commands to be executed
+
+Dockerfile
+
+FROM [base OS or image]
+
+RUN [Any command which needs to executed only once (during build time) i.e. installations and settings]
+
+CMD [Any command which needs to executed during run time]
+
+sudo docker build -t dummyflaskimage .
 
 
 
